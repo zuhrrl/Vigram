@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_gradient"
+    tools:context=".ui.SplashScreen">
+
+    <LinearLayout
+        android:id="@+id/id_logo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/id_fps_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/id_text_splash_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_reg"
+            android:textColor="@color/color_white"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_version_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/roboto_reg"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/stable_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:text="Beta Version"
+            android:fontFamily="@font/roboto"
+            android:textSize="15sp">
+
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

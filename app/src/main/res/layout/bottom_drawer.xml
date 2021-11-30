@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_container_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:id="@+id/header_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparentColor">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="150dp"
+            android:background="@drawable/line_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/id_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:tint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/baseline_clear_24" />
+
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+
+    <!-- First item -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_menu_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bottom_sheet">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/main_color">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_menu_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:tint="@color/fabIcon" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/roboto_reg"
+            android:text="About Us"
+            android:textColor="@color/blackColor"
+
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- End first item -->
+
+
+    <!-- Second item -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_menu_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_menu_item_1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/main_color">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_menu_sheet_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:tint="@color/fabIcon" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/roboto_reg"
+            android:text="Privacy Policy"
+            android:textColor="@color/blackColor"
+
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Second first item -->
+
+    <!-- Third item -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_menu_item_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_menu_item_2">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#8e44ad">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_menu_sheet_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:tint="@color/fabIcon" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/roboto_reg"
+            android:text="Check Updates"
+            android:textColor="@color/blackColor"
+
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Third first item -->
+
+    <!-- Fourth item -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/id_menu_item_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_menu_item_3">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#27ae60">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_menu_sheet_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:tint="@color/fabIcon" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/id_textview_updatepp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/roboto_reg"
+            android:text="Exit"
+            android:textColor="@color/blackColor"
+
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Fourth first item -->
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

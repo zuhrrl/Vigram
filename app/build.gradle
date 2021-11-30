@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.vigram.downloader"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 192910004
+        versionName "1.0.0.0.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        developer {
+            storeFile file("keydeveloper.jks")
+            storePassword 'alya7#1234'
+            keyAlias 'key0'
+            keyPassword 'alya7#1234'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        developer {
+            def appIdSuffix = "developer"
+            applicationIdSuffix appIdSuffix
+            signingConfig signingConfigs.developer
+
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def appId = variant.applicationId
+            def versionName = variant.versionName
+            def versionCode = variant.versionCode
+
+            def apkName = appId + '_v' + versionName+"_code"+versionCode + '.apk'
+            output.outputFileName = apkName
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha04'
+    // Github Library
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    // Google Ads
+    implementation 'com.google.android.gms:play-services-ads-lite:18.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+}

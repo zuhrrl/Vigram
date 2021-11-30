@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Change App Name here -->
+    <string name="app_name">Vigram</string>
+
+    <!-- MainActiivty.java layout -->
+    <string name="hashtag_name">Random Tags</string>
+
+
+    <!-- Rate Dialog -->
+    <string name="rate_app_dialog_text_title">Love Vigram?</string>
+    <string name="rate_app_dialog_text_content">Thank you for choosing our product. Your feedback is important to us.</string>
+    <string name="rate_app_dialog_btn_go_rate">Rate Us</string>
+    <string name="rate_app_notification_action_rate">RATE US</string>
+    <string name="rate_app_dialog_btn_feedback">Leave Feedback</string>
+    <string name="rate_app_notification_action_feedback">FEEDBACK</string>
+
+    <!-- Reaction String -->
+    <string name="reaction_vigram">How do you feel about Vigram?</string>
+
+    <!-- Ads Google Admob -->
+    <string name="mobileads_app_id">ca-app-pub-3940256099942544~3347511713</string> <!-- Your admob app id -->
+    <string name="mobileads_adview">ca-app-pub-3940256099942544/6300978111</string> <!-- Your adview code here -->
+    <string name="mobileads_interstitial">ca-app-pub-3940256099942544/1033173712</string> <!-- Your interstitial here -->
+    <string name="mobileads_test_device">#</string> <!-- Your test device here -->
+</resources>
