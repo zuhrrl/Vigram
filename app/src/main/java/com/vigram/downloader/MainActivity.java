@@ -290,7 +290,7 @@ public class MainActivity extends AppCompatActivity implements LifecycleOwner {
             MainModels.getNestedScrollView().setVisibility(View.GONE);
             MainModels.getTagsCheckBoxLayout().setVisibility(View.GONE);
             MainModels.getWebView().setVisibility(View.VISIBLE);
-            BrowserHelper.loadUrl(MainModels.getWebView(), "file:///android_asset/privacy-policy.html");
+            //BrowserHelper.loadUrl(MainModels.getWebView(), "file:///android_asset/privacy-policy.html");
             mTabLayout.getTabAt(0).setText("PRIVACY POLICY");
             mTabLayout.getTabAt(0).setIcon(R.drawable.baseline_sentiment_satisfied_alt_24);
             mBottomSheetDialog.dismiss();
@@ -305,7 +305,7 @@ public class MainActivity extends AppCompatActivity implements LifecycleOwner {
             MainModels.getNestedScrollView().setVisibility(View.GONE);
             MainModels.getTagsCheckBoxLayout().setVisibility(View.GONE);
             MainModels.getWebView().setVisibility(View.VISIBLE);
-            BrowserHelper.loadUrl(MainModels.getWebView(), "file:///android_asset/privacy-policy.html");
+            //BrowserHelper.loadUrl(MainModels.getWebView(), "file:///android_asset/privacy-policy.html");
             mTabLayout.getTabAt(0).setText("ABOUT US");
             mTabLayout.getTabAt(0).setIcon(R.drawable.baseline_info_24);
             mBottomSheetDialog.dismiss();
