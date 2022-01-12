@@ -14,12 +14,7 @@ android {
     }
 
     signingConfigs {
-        developer {
-            storeFile file("keydeveloper.jks")
-            storePassword 'alya7#1234'
-            keyAlias 'key0'
-            keyPassword 'alya7#1234'
-        }
+
     }
 
     buildTypes {
@@ -30,7 +25,7 @@ android {
         developer {
             def appIdSuffix = "developer"
             applicationIdSuffix appIdSuffix
-            signingConfig signingConfigs.developer
+            //signingConfig signingConfigs.developer
 
         }
     }
